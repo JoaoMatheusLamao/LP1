@@ -8,7 +8,7 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        int listSize = 2;
+        int listSize = 10;
 
         List<String> nomes = new ArrayList<>();
 

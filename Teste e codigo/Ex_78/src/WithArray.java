@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Program {
+public class WithArray {
 
     public static void main(String[] args) {
 
@@ -10,10 +10,11 @@ public class Program {
 
         int listSize = 10;
 
-        List<String> nomes = new ArrayList<>();
+        String[] nomes = new String[listSize];
+
 
         for (int i = 0; i < listSize; i++) {
-            nomes.add(sc.nextLine());
+            nomes[i] = (sc.nextLine());
         }
 
         System.out.println("Agora digite um nome: \n");
@@ -23,7 +24,7 @@ public class Program {
         Boolean c = false;
 
         for (int i = 0; i < listSize; i++) {
-            if (nomes.get(i).equals(busca)){
+            if (nomes[i].equals(busca)){
                 c = true;
             }
         }
